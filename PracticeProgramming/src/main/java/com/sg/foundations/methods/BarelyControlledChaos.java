@@ -3,7 +3,7 @@
  * @author kharileigh
  */
 
-package com.sg.foundations.basics.methods;
+package com.sg.foundations.methods;
 
 public class BarelyControlledChaos {
 

@@ -51,13 +51,13 @@ public class RockPaperScissors {
         // ENSURING 
         if(numOfPlayerRounds < 1 || numOfPlayerRounds > 10) {
             System.out.println("Please select a number between 1-10");
-        }
+        } 
 
         // ROCK, PAPER, SCISSORS GAME 
         // run as long as game is true and count is equal to or less than 10
-        while(game && counter <= 10) {
+        while(game && counter <= 10) {   
             
-            counter++;
+            counter += 1;
             
             // ASK USER TO CHOOSE THEIR MOVE
             System.out.println("Please choose your first move: ");
@@ -83,28 +83,29 @@ public class RockPaperScissors {
                         break;
                 }
             }
+            System.out.println(computerMove);
             
             // DETERMINE WINS, LOSSES, TIE
             if(playerMove.equals(computerMove)){
-                numOfTies++;
+                numOfTies += 1;
                 System.out.println("TIE");
             } else if (playerMove.equals(paper) && computerMove.equals(rock)) {
-                numOfPlayerWins++;
+                numOfPlayerWins += 1;
                 System.out.println("PLAYER WINS ROUND");
             } else if (computerMove.equals(paper) && playerMove.equals(rock)) {
-                numOfComputerWins++;
+                numOfComputerWins += 1;
                 System.out.println("COMPUTER WINS ROUND");
             } else if (playerMove.equals(scissors) && computerMove.equals(paper)) {
-                numOfPlayerWins++;
+                numOfPlayerWins += 1;
                 System.out.println("PLAYER WINS ROUND"); 
             } else if (computerMove.equals(scissors) && playerMove.equals(paper)) {
-                numOfComputerWins++;
+                numOfComputerWins += 1;
                 System.out.println("COMPUTER WINS ROUND");
             } else if (playerMove.equals(rock) && computerMove.equals(scissors)) {
-                numOfPlayerWins++;
+                numOfPlayerWins += 1;
                 System.out.println("PLAYER WINS ROUND");
             } else if (computerMove.equals(rock) && playerMove.equals(scissors)) {
-                numOfComputerWins++;
+                numOfComputerWins += 1;
                 System.out.println("COMPUTER WINS ROUND");
             }
 
