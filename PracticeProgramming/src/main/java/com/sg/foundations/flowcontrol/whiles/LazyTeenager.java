@@ -16,43 +16,42 @@
 
 package com.sg.foundations.flowcontrol.whiles;
 
-// IMPORT RANDOM & SCANNER
-import java.util.Random;
-import java.util.Scanner;
-
 public class LazyTeenager {
     
     public static void main(String[] args) {
         
-        int randomClean = 0;
-        boolean isRoomClean = true;
-        Scanner scanner = new Scanner(System.in);
-        Random rand = new Random();
+        
+        int request2Clean = 0;
+        boolean isRoomDirty = true;
+        int randomChance = rndNum(1, 7);
+        
         
         // CONDITION TO EXECUTE REPEATEDLY :
-        String mom = "CLEAN YOUR ROOM!";
+        String mom = "CLEAN YOUR ROOM!!";
             
         // DO WHILE TO EXECUTE UNTIL ROOM IS CLEAN:
+        // IF - more than 7, mom cleans
         do {
-          
-            System.out.println(mom);
-            
-            // TEEN RESPONSE
-            String teenAnswer = scanner.next();
-            
-            if("no".equals(teenAnswer)) {
-                isRoomClean = false;
-                for (int i = 0; i <= 8; i++) {
-                    randomClean = rand.nextInt();
-                    randomClean++;
-                }
-            } 
+            request2Clean += 1;
+            System.out.println(mom + "(x" + request2Clean + ")");
+           
+            if (request2Clean > 7) {
+                System.out.println(mom + " " + "That's IT! I'm doing it!!! YOU'RE GROUNDED AND I'M TAKING AWAY YOUR XBOX");
+            } else if (request2Clean <= 7 && request2Clean == randomChance) {
+                System.out.println("FINE! I'LL CLEAN MY ROOM! BUT I REFUSE TO EAT MY PEAS!");
+                isRoomDirty = false;
+                break;
+            }
         
-        } while (randomClean < 7);
+        } while (isRoomDirty);
         
         // PRINT AFTER WHILE LOOP COMPLETES
-        System.out.println(mom + " " + "That's IT! I'm doing it!!! YOU'RE GROUNDED AND I'M TAKING AWAY YOUR XBOX");
         
+        
+    }
+
+    private static int rndNum(int i, int i0) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
 }
