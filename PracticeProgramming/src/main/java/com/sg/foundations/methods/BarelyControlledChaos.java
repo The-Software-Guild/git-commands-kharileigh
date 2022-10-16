@@ -25,15 +25,18 @@ public class BarelyControlledChaos {
         // call animal method again here
         
        
-        ??? animal = ???; 
-        ??? colorAgain = ???; // call color method again here
-        ??? weight = ???; // call number method,
+        // call color method again here
+       
+        // call number method,
             // with a range between 5 - 200
-        ??? distance = ???; // call number method,
+        
+        // call number method,
             // with a range between 10 - 20
-        ??? number = ???; // call number method,
+        
+        // call number method,
             // with a range between 10000 - 20000
-        ??? time = ???; // call number method,
+        
+         // call number method,
             // with a range between 2 - 6            
 
         System.out.println("Once, when I was very small...");
