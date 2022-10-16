@@ -5,13 +5,27 @@
 
 package com.sg.foundations.methods;
 
+// IMPORT RANDOM
+import java.util.Random;
+
 public class BarelyControlledChaos {
 
     public static void main(String[] args) {
 
-        static void userColor ()
-        ??? color = ???; // call color method here
-        ??? animal = ???; // call animal method again here
+        // call color method here
+        public static String userColor () {
+
+            Random rand = new Random();
+            String[] colors = new String [] {"red", "blue", "yellow", "blue ", "green"};
+            int randIdx = rand.nextInt(colors.length);
+            return String color = colors[randIdx];
+            System.out.println(color);
+        }
+        
+        // call animal method again here
+        
+       
+        ??? animal = ???; 
         ??? colorAgain = ???; // call color method again here
         ??? weight = ???; // call number method,
             // with a range between 5 - 200

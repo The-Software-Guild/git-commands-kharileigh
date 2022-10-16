@@ -9,6 +9,9 @@
  * USE RANDOM TO CALCULATE THIS "CHANCE" CHECK
  * 7th time - they are getting grounded and Xbox confiscated 
  * USE BREAK TO STOP THE LOOP IN THAT CASE, NOT A COMPOUND CONDITION
+ * 
+ * 
+ * CURRENTLY ONLY PRINTS ONCE - NEED HELP TO APPLY RANDOM PROBABILITY
  */
 
 package com.sg.foundations.flowcontrol.whiles;
