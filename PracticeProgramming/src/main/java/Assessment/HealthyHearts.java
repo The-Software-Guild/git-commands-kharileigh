@@ -18,6 +18,7 @@ public class HealthyHearts {
         
         String userAge;
         
+        // GET USER AGE
         System.out.println("What is your age?");
         Scanner userInput = new Scanner(System.in);
         userAge = userInput.nextLine();

@@ -15,6 +15,7 @@ public class DogGenetics {
     
     public static void main(String[] args) {
         
+        // INITIALISE ALL NECESSARY VARIABLES
         String userDog;
         int max = 100;
         int sum = 0;
@@ -25,12 +26,15 @@ public class DogGenetics {
         int num4 = 0;
         int num5 = 0;
         
-        int randomNum = num(1, 100);
+        // RANDOMISER TO GET A RANDOM INTEGER BETWEEN 1 - 100
+        int randomNum = num(1, 101);
         
+        // GET USER'S DOG'S NAME
         System.out.print("What is your dog's name? ");
         Scanner input = new Scanner(System.in);
         userDog = input.next();
         
+        // CALCULATE RANDOM INTEGERS WHERE THE SUM EQUALS TO 100 & PRINT TO USER
         do {
             
             System.out.println(userDog + " is: ");
