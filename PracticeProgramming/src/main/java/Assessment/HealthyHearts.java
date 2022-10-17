@@ -26,8 +26,8 @@ public class HealthyHearts {
         
         System.out.println("Your maximum heart rate should be " + getMaxHeartRate(age) + "beats per minute.");
         
-        // METHOD MAXIMUM HEART RATE
-        public int getMaxHeartRate(int ageInput) {
+        // METHOD MAXIMUM HEART RATE ----->> (UNSURE WHY I GET THIS ERROR BELOW) <<------
+        public static int getMaxHeartRate(int ageInput) {
             return 220 - ageInput;
         }
         
