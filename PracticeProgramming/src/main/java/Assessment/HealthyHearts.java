@@ -22,13 +22,13 @@ public class HealthyHearts {
         System.out.println("What is your age?");
         Scanner userInput = new Scanner(System.in);
         userAge = userInput.nextLine();
-        age = Integer.valueOf(userAge);
+        int age = Integer.valueOf(userAge);
         
         System.out.println("Your maximum heart rate should be " + getMaxHeartRate(age) + "beats per minute.");
         
         // METHOD MAXIMUM HEART RATE
-        public int getMaxHeartRate(int age) {
-            return 220 - age;
+        public int getMaxHeartRate(int ageInput) {
+            return 220 - ageInput;
         }
         
         // METHOD TO GET TARGET HEART RATE

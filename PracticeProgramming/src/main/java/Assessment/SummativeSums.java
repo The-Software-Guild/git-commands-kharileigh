@@ -26,11 +26,12 @@ public class SummativeSums {
         int[] arr3 = { 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 
 140, 150, 160, 170, 180, 190, 200, -99 };
         
-        // CALCULATE SUM OF INTEGERS IN ARRAY USING 
+        // CALCULATE SUM OF INTEGERS IN ARRAY USING STREAM METHOD FROM JAVA UTIL CLASSES
         int sum = IntStream.of(arr1).sum();
         int sum2 = IntStream.of(arr2).sum();
         int sum3 = IntStream.of(arr3).sum();
         
+        // PRINT SUM TO CONSOLE
         System.out.println("The sum of: " + Arrays.toString(arr1) + " " + "is: ");
         System.out.println(sum);
         System.out.println("The sum of: " + Arrays.toString(arr2) + " " +"is: ");
