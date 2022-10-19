@@ -151,22 +151,24 @@ public class RockPaperScissors {
             if (userWins == compWins) {
                 System.out.println("\n NO WINNER! IT'S A TIE!");
             }
+            
+            // ASK USER IF THEY WANT TO PLAY ANOTHER GAME
+            System.out.println("\n Would you like to play another game?");
+            System.out.println("'YES' or 'NO'?");
+            Scanner userAnswer = new Scanner(System.in);
+            String userReplay = userAnswer.nextLine();
+
+            if ("NO".equals(userReplay)) {
+                game = false;
+                System.out.println("\n THANKS FOR PLAYING!");
+            } else {
+                game = true;
+            }
         
            
         } while(game = true);
         
-        // ASK USER IF THEY WANT TO PLAY ANOTHER GAME
-        System.out.println("\n Would you like to play another game?");
-        System.out.println("'YES' or 'NO'?");
-        String userReplay = userInput.nextLine();
-
-        // -----> ((CURRENTLY RESTARTS GAME AUTOMATICALLY - UNSURE WHY!)) <------
-        if ("NO".equals(userReplay)) {
-            game = false;
-            System.out.println("\n THANKS FOR PLAYING!");
-        } else {
-            game = true;
-        }
+        
 
         
     }
